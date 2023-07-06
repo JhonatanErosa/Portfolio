@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@100&family=Poppins:wght@100&family=Roboto:wght@100&display=swap');
+
+body,
+a {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/* NavBar styles */
+.navContainer {
+  display: flex;
+  background: #3c3a39;
+  justify-content: space-between;
+  height: 50px;
+  padding-left: 6.7%;
+  padding-right: 6.7%;
+}
+
+.logo img {
+  height: 80%;
+  margin-top: 12%;
+  border-radius: 50%;
+  width: 100%;
+}
+
+.navItems {
+  display: none;
+}
+
+.hamburger {
+  align-self: center;
+  cursor: pointer;
+}
+
+/* Main Container */
+.mainContainer {
+  background: #1c1a19;
+  display: flex;
+  flex-direction: column;
+  padding: 32% 5.2%;
+  background-repeat: no-repeat;
+  background-image: url("./Sources/Backgorund-Mobile.svg");
+  background-size: 30%;
+  background-position-y: 100%;
+  background-position-x: 100%;
+}
+
+.mainContent h1 {
+  font-size: 3.2em;
+  font-family: 'Crete Round', sans-serif;
+  font-weight: 400;
+  line-height: 64px;
+  color: #ff6b00;
+  margin: 0;
+}
+
+.mainContent h2 {
+  font-size: 1.5em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  line-height: 2em;
+  color: #fff5e1;
+  margin: 0;
+}
+
+.mainContent p {
+  font-size: 1em;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  line-height: 1.5em;
+  color: #fff;
+}
+
+.mainSocial {
+  width: 60%;
+  display: flex;
+  padding-left: 0;
+}
+
+/* 768px */
+@media (min-width: 768px) {
+  .navItems {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1em;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    line-height: 1.25em;
+    color: #fff;
+    margin-right: 18%;
+  }
+
+  .navContainer {
+    padding-left: 12.2%;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .navItems li {
+    margin-right: 15%;
+  }
+
+  .mainContainer {
+    display: flex;
+    flex-direction: row;
+    padding: 13% 2%;
+    background-repeat: no-repeat;
+    background-image: url("./Sources/Illustration-header.svg");
+    background-size: 35%;
+    background-position-y: 0;
+    background-position-x: 100%;
+    align-items: center;
+  }
+
+  .mainContent {
+    order: 1;
+    margin: 0 40% 0 5%;
+  }
+
+  .mainSocial {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+  }
+}
