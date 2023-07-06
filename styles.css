@@ -25,13 +25,15 @@ button {
   background: #3c3a39;
   justify-content: space-between;
   height: 50px;
+  padding-left: 6.7%;
+  padding-right: 6.7%;
 }
 
 .logo img {
   height: 80%;
   margin-top: 12%;
-  margin-left: 50%;
   border-radius: 50%;
+  width: 100%;
 }
 
 .navItems {
@@ -39,7 +41,8 @@ button {
 }
 
 .hamburger {
-  margin-right: 6.4%;
+  align-self: center;
+  cursor: pointer;
 }
 
 /* Main Container */
@@ -47,7 +50,7 @@ button {
   background: #1c1a19;
   display: flex;
   flex-direction: column;
-  padding: 32% 5%;
+  padding: 32% 5.2%;
   background-repeat: no-repeat;
   background-image: url("./Sources/Backgorund-Mobile.svg");
   background-size: 30%;
@@ -84,8 +87,10 @@ button {
 .mainSocial {
   width: 60%;
   display: flex;
+  padding-left: 0;
 }
 
+/* 768px */
 @media (min-width: 768px) {
   .navItems {
     display: flex;
@@ -98,8 +103,8 @@ button {
     margin-right: 18%;
   }
 
-  .logo img {
-    margin-left: 235%;
+  .navContainer {
+    padding-left: 12.2%;
   }
 
   .hamburger {
