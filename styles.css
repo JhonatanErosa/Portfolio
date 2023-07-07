@@ -90,6 +90,170 @@ button {
   padding-left: 0;
 }
 
+/* HeadLine Works Section */
+.worksHeadLine {
+  padding: 33.6% 6%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.worksHeadLine h2 {
+  align-self: center;
+  color: #1c1a19;
+  font-size: 2.5em;
+  font-family: 'Crete Round', sans-serif;
+  font-weight: 400;
+  line-height: 3.25em;
+  margin: 0;
+}
+
+.topLine {
+  border: 1px solid #212121;
+  border-top: 0;
+  margin-top: 7%;
+}
+
+/* Cards Works Section */
+.grid {
+  display: grid;
+  grid-template: 6 / 1;
+  row-gap: 1.5em;
+  padding: 0 6%;
+}
+
+/* Main Card */
+.mainCard {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardImage img {
+  width: 100%;
+}
+
+.cardContent h3 {
+  font-size: 2em;
+  font-family: 'Crete Round', sans-serif;
+  font-weight: 400;
+  line-height: 2.75em;
+  color: #091e42;
+  margin: 0;
+}
+
+.cardContent p {
+  font-size: 1em;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 1.5em;
+  margin: 0;
+}
+
+.mainCategories {
+  display: flex;
+  justify-content: space-between;
+  margin: 5.8% 0 3.5%;
+  padding: 0;
+}
+
+.mainCategories li {
+  color: #091e42;
+  border: 1px solid #8993a4;
+  padding: 3.5%;
+  cursor: pointer;
+}
+
+.projectsButton {
+  background: #ff6b00;
+  color: #fff;
+  padding: 5%;
+  font-size: 1em;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  line-height: 1.5em;
+  width: 30%;
+  cursor: pointer;
+}
+
+/* Generic cards */
+.genericCard1 {
+  display: flex;
+  flex-direction: column;
+  background-image: url(Sources/Img\ Placeholder.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.genericCard2 {
+  display: flex;
+  flex-direction: column;
+  background-image: url(Sources/Dashboard.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.genericCard3 {
+  display: flex;
+  flex-direction: column;
+  background-image: url(Sources/WebSite\ Portfolio.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding-top: 13%;
+}
+
+.cardContent2 {
+  padding: 22% 4.5% 0;
+}
+
+.cardContent2 h2 {
+  color: #fff;
+  font-size: 2em;
+  font-family: 'Crete Round', sans-serif;
+  font-weight: 400;
+  margin: 0;
+}
+
+.cardContent2 p {
+  font-size: 1em;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  color: #fff;
+  margin: 4% 0;
+  line-height: 1.5em;
+}
+
+.categories {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  width: 85%;
+}
+
+.categories li {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.24);
+  padding: 3.5%;
+  font-size: 1em;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  line-height: 1.25em;
+  cursor: pointer;
+}
+
+.projectsButton2 {
+  background: #ff6b00;
+  color: #fff;
+  padding: 5%;
+  font-size: 1em;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  line-height: 1.5em;
+  width: 89.7%;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
 /* 768px */
 @media (min-width: 768px) {
   .navItems {
