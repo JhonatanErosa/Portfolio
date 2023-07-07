@@ -176,6 +176,17 @@ button {
   display: flex;
 }
 
+.projectsButton:hover {
+  background: linear-gradient(0deg, #fff5e1, #fff5e1), linear-gradient(0deg, #f55800, #f55800);
+  color: rgba(245, 88, 0, 1);
+  border: 1px solid rgba(245, 88, 0, 1);
+}
+
+.projectsButton:active {
+  background: rgba(224, 83, 4, 1);
+  color: rgba(244, 241, 240, 1);
+}
+
 /* Generic cards */
 .genericCard1 {
   display: flex;
@@ -258,6 +269,18 @@ button {
   cursor: pointer;
 }
 
+.projectsButton2:hover {
+  background: linear-gradient(0deg, #fff5e1, #fff5e1), linear-gradient(0deg, #f55800, #f55800);
+  color: rgba(245, 88, 0, 1);
+  border: 1px solid rgba(245, 88, 0, 1);
+  width: 89.6%;
+}
+
+.projectsButton2:active {
+  background: rgba(224, 83, 4, 1);
+  color: rgba(244, 241, 240, 1);
+}
+
 /* About Me Section */
 .aboutMe {
   background: #1c1a19;
@@ -299,6 +322,17 @@ button {
   width: 38%;
   cursor: pointer;
   margin-bottom: 66.5%;
+}
+
+.resumeButton:hover {
+  background: linear-gradient(0deg, #fff5e1, #fff5e1), linear-gradient(0deg, #f55800, #f55800);
+  color: rgba(245, 88, 0, 1);
+  border: 1px solid rgba(245, 88, 0, 1);
+}
+
+.resumeButton:active {
+  background: rgba(224, 83, 4, 1);
+  color: rgba(244, 241, 240, 1);
 }
 
 .aboutLine {
