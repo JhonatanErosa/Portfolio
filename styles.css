@@ -180,7 +180,7 @@ button {
 .genericCard1 {
   display: flex;
   flex-direction: column;
-  background-image: linear-gradient(rgba(38,38,38,0), rgba(38,38,38,0.9)),url(Sources/Snapshoot\ Portfolio.svg);
+  background-image: linear-gradient(rgba(38, 38, 38, 0), rgba(38, 38, 38, 0.9)), url(Sources/Snapshoot\ Portfolio.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -189,7 +189,7 @@ button {
 .genericCard2 {
   display: flex;
   flex-direction: column;
-  background-image: linear-gradient(rgba(38,38,38,0), rgba(38,38,38,0.9)),url(Sources/Dashboard.svg);
+  background-image: linear-gradient(rgba(38, 38, 38, 0), rgba(38, 38, 38, 0.9)), url(Sources/Dashboard.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -198,7 +198,7 @@ button {
 .genericCard3 {
   display: flex;
   flex-direction: column;
-  background-image: linear-gradient(rgba(38,38,38,0), rgba(38,38,38,0.9)),url(Sources/WebSite\ Portfolio.svg);
+  background-image: linear-gradient(rgba(38, 38, 38, 0), rgba(38, 38, 38, 0.9)), url(Sources/WebSite\ Portfolio.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -258,7 +258,7 @@ button {
   cursor: pointer;
 }
 
-/*About Me Section*/
+/* About Me Section */
 .aboutMe {
   background: #1c1a19;
   display: flex;
@@ -267,9 +267,6 @@ button {
   background-repeat: no-repeat;
   background-position-x: 100%;
   background-position-y: 27%;
-}
-
-.aboutMe {
   padding: 33.55% 6% 0;
 }
 
@@ -314,7 +311,7 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 38.2% 0 20%;  
+  padding: 38.2% 0 20%;
   margin: 0;
 }
 
@@ -340,7 +337,7 @@ button {
   padding: 0;
 }
 
-.languagesList li{
+.languagesList li {
   font-size: 1.38em;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
@@ -370,7 +367,7 @@ button {
   padding: 0;
 }
 
-.frameworksList li{
+.frameworksList li {
   font-size: 1.38em;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
@@ -400,7 +397,7 @@ button {
   padding: 0;
 }
 
-.skillsList li{
+.skillsList li {
   font-size: 1.38em;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
@@ -490,7 +487,7 @@ button {
     padding: 0 6%;
   }
 
-  .cardContent h3  {
+  .cardContent h3 {
     padding: 0;
   }
 
@@ -502,7 +499,7 @@ button {
     display: none;
   }
 
-  .aboutMe{
+  .aboutMe {
     padding-top: 17.3%;
     background-image: url(Sources/BackgroundDesktop.svg);
     background-size: 40%;
