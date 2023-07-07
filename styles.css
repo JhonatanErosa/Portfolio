@@ -90,6 +90,355 @@ button {
   padding-left: 0;
 }
 
+/* HeadLine Works Section */
+.worksHeadLine {
+  padding: 33.6% 6%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.worksHeadLine h2 {
+  align-self: center;
+  color: #1c1a19;
+  font-size: 2.5em;
+  font-family: 'Crete Round', sans-serif;
+  font-weight: 400;
+  margin: 0;
+}
+
+.topLine {
+  border: 1px solid #212121;
+  border-top: 0;
+  margin-top: 16%;
+}
+
+/* Cards Works Section */
+.grid {
+  display: grid;
+  grid-template: 6 / 1;
+  row-gap: 1.5em;
+  padding: 0 6% 33.5%;
+}
+
+/* Main Card */
+.mainCard {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardImage img {
+  width: 100%;
+}
+
+.cardContent h3 {
+  font-size: 2em;
+  font-family: 'Crete Round', sans-serif;
+  font-weight: 400;
+  color: #091e42;
+  margin: 0;
+  padding: 6% 0;
+}
+
+.cardContent p {
+  font-size: 1em;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 1.5em;
+  margin: 0;
+}
+
+.mainCategories {
+  display: flex;
+  justify-content: space-between;
+  margin: 5.8% 0 3.5%;
+  padding: 0;
+  padding-bottom: 5%;
+}
+
+.mainCategories li {
+  color: #091e42;
+  border: 1px solid #8993a4;
+  padding: 3.5%;
+  cursor: pointer;
+}
+
+.projectsButton {
+  background: #ff6b00;
+  color: #fff;
+  padding: 5%;
+  font-size: 1em;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  line-height: 1.5em;
+  width: 30%;
+  cursor: pointer;
+  display: flex;
+}
+
+.projectsButton:hover {
+  background: linear-gradient(0deg, #fff5e1, #fff5e1), linear-gradient(0deg, #f55800, #f55800);
+  color: rgba(245, 88, 0, 1);
+  border: 1px solid rgba(245, 88, 0, 1);
+}
+
+.projectsButton:active {
+  background: rgba(224, 83, 4, 1);
+  color: rgba(244, 241, 240, 1);
+}
+
+/* Generic cards */
+.genericCard1 {
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(rgba(38, 38, 38, 0), rgba(38, 38, 38, 0.9)), url(Sources/Snapshoot\ Portfolio.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.genericCard2 {
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(rgba(38, 38, 38, 0), rgba(38, 38, 38, 0.9)), url(Sources/Dashboard.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.genericCard3 {
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(rgba(38, 38, 38, 0), rgba(38, 38, 38, 0.9)), url(Sources/WebSite\ Portfolio.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 13%;
+}
+
+.cardContent2 {
+  padding: 22% 4.5% 0;
+}
+
+.cardContent2 h2 {
+  color: #fff;
+  font-size: 2em;
+  font-family: 'Crete Round', sans-serif;
+  font-weight: 400;
+  margin: 0;
+}
+
+.cardContent2 p {
+  font-size: 1em;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  color: #fff;
+  margin: 4% 0;
+  line-height: 1.5em;
+}
+
+.categories {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  width: 85%;
+}
+
+.categories li {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.24);
+  padding: 3.5%;
+  font-size: 1em;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  line-height: 1.25em;
+  cursor: pointer;
+}
+
+.projectsButton2 {
+  background: #ff6b00;
+  color: #fff;
+  padding: 5%;
+  font-size: 1em;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  line-height: 1.5em;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.projectsButton2:hover {
+  background: linear-gradient(0deg, #fff5e1, #fff5e1), linear-gradient(0deg, #f55800, #f55800);
+  color: rgba(245, 88, 0, 1);
+  border: 1px solid rgba(245, 88, 0, 1);
+  width: 89.6%;
+}
+
+.projectsButton2:active {
+  background: rgba(224, 83, 4, 1);
+  color: rgba(244, 241, 240, 1);
+}
+
+/* About Me Section */
+.aboutMe {
+  background: #1c1a19;
+  display: flex;
+  flex-direction: column;
+  background-image: url(Sources/BackgroundMobile.svg);
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 27%;
+  padding: 33.55% 6% 0;
+}
+
+.aboutText h2 {
+  font-size: 4.5em;
+  font-family: 'Crete Round', sans-serif;
+  font-weight: 400;
+  margin: 0;
+  color: #ff6b00;
+}
+
+.aboutText p {
+  font-size: 1em;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 1.5em;
+  color: #f4f5f7;
+  margin: 0;
+  padding: 7.7% 0;
+}
+
+.resumeButton {
+  background: #ff6b00;
+  color: #fff;
+  padding: 5%;
+  font-size: 1em;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  line-height: 1.5em;
+  width: 38%;
+  cursor: pointer;
+  margin-bottom: 66.5%;
+}
+
+.resumeButton:hover {
+  background: linear-gradient(0deg, #fff5e1, #fff5e1), linear-gradient(0deg, #f55800, #f55800);
+  color: rgba(245, 88, 0, 1);
+  border: 1px solid rgba(245, 88, 0, 1);
+}
+
+.resumeButton:active {
+  background: rgba(224, 83, 4, 1);
+  color: rgba(244, 241, 240, 1);
+}
+
+.aboutLine {
+  border: 1px solid #fff;
+  border-top: 0;
+  margin-top: 7%;
+}
+
+.skillsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 38.2% 0 20%;
+  margin: 0;
+}
+
+.languagesHead {
+  display: flex;
+  justify-content: center;
+  padding: 4.1%;
+}
+
+.languagesHead h3 {
+  font-size: 2em;
+  font-family: 'InaiMathi', sans-serif;
+  font-weight: 700;
+  margin: 0;
+  color: #fff;
+  padding: 5%;
+}
+
+.languagesList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+
+.languagesList li {
+  font-size: 1.38em;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 2.6em;
+  color: #fff;
+}
+
+.frameworksHead {
+  display: flex;
+  justify-content: center;
+  padding: 4.1%;
+}
+
+.frameworksHead h3 {
+  font-size: 2em;
+  font-family: 'InaiMathi', sans-serif;
+  font-weight: 700;
+  margin: 0;
+  color: #fff;
+  padding: 5%;
+}
+
+.frameworksList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+
+.frameworksList li {
+  font-size: 1.38em;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 2.6em;
+  color: #fff;
+}
+
+.skillsHead {
+  display: flex;
+  justify-content: center;
+  padding: 4.1%;
+}
+
+.skillsHead h3 {
+  font-size: 2em;
+  font-family: 'InaiMathi', sans-serif;
+  font-weight: 700;
+  margin: 0;
+  color: #fff;
+  padding: 5%;
+}
+
+.skillsList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+
+.skillsList li {
+  font-size: 1.38em;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 2.6em;
+  color: #fff;
+}
+
 /* 768px */
 @media (min-width: 768px) {
   .navItems {
@@ -136,5 +485,83 @@ button {
     display: flex;
     flex-direction: column;
     width: 20%;
+  }
+
+  .worksHeadLine {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 15% 6%;
+  }
+
+  .topLine {
+    width: 50%;
+    margin: auto;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 33.333% 33.333% 33.333%;
+    gap: 2%;
+  }
+
+  .mainCard {
+    display: flex;
+    flex-direction: row;
+    grid-column: 1/4;
+    grid-row: 1/2;
+  }
+
+  .genericCard3 {
+    padding-top: 19%;
+  }
+
+  .cardContent {
+    width: 90%;
+    padding: 0 6%;
+  }
+
+  .cardContent h3 {
+    padding: 0;
+  }
+
+  .projectsButton {
+    width: 33%;
+  }
+
+  .projectsButton2 {
+    display: none;
+  }
+
+  .aboutMe {
+    padding-top: 17.3%;
+    background-image: url(Sources/BackgroundDesktop.svg);
+    background-size: 40%;
+    background-position-y: 20%;
+  }
+
+  .aboutText {
+    width: 50%;
+  }
+
+  .aboutText p {
+    padding: 2% 0;
+  }
+
+  .resumeButton {
+    width: 18%;
+    padding: 2%;
+    margin: 3% 0 10%;
+  }
+
+  .skillsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 15%;
+  }
+
+  .skillsHead {
+    padding-top: 26%;
   }
 }
