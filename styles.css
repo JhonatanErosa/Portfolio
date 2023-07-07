@@ -104,14 +104,13 @@ button {
   font-size: 2.5em;
   font-family: 'Crete Round', sans-serif;
   font-weight: 400;
-  line-height: 3.25em;
   margin: 0;
 }
 
 .topLine {
   border: 1px solid #212121;
   border-top: 0;
-  margin-top: 7%;
+  margin-top: 16%;
 }
 
 /* Cards Works Section */
@@ -119,7 +118,7 @@ button {
   display: grid;
   grid-template: 6 / 1;
   row-gap: 1.5em;
-  padding: 0 6%;
+  padding: 0 6% 33.5%;
 }
 
 /* Main Card */
@@ -136,9 +135,9 @@ button {
   font-size: 2em;
   font-family: 'Crete Round', sans-serif;
   font-weight: 400;
-  line-height: 2.75em;
   color: #091e42;
   margin: 0;
+  padding: 6% 0;
 }
 
 .cardContent p {
@@ -154,6 +153,7 @@ button {
   justify-content: space-between;
   margin: 5.8% 0 3.5%;
   padding: 0;
+  padding-bottom: 5%;
 }
 
 .mainCategories li {
@@ -173,31 +173,35 @@ button {
   line-height: 1.5em;
   width: 30%;
   cursor: pointer;
+  display: flex;
 }
 
 /* Generic cards */
 .genericCard1 {
   display: flex;
   flex-direction: column;
-  background-image: url(Sources/Img\ Placeholder.svg);
-  background-size: 100%;
+  background-image: linear-gradient(rgba(38,38,38,0), rgba(38,38,38,0.9)),url(Sources/Snapshoot\ Portfolio.svg);
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .genericCard2 {
   display: flex;
   flex-direction: column;
-  background-image: url(Sources/Dashboard.svg);
-  background-size: 100%;
+  background-image: linear-gradient(rgba(38,38,38,0), rgba(38,38,38,0.9)),url(Sources/Dashboard.svg);
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .genericCard3 {
   display: flex;
   flex-direction: column;
-  background-image: url(Sources/WebSite\ Portfolio.svg);
-  background-size: 100%;
+  background-image: linear-gradient(rgba(38,38,38,0), rgba(38,38,38,0.9)),url(Sources/WebSite\ Portfolio.svg);
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   padding-top: 13%;
 }
 
@@ -248,10 +252,160 @@ button {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   line-height: 1.5em;
-  width: 89.7%;
+  width: 90%;
   display: flex;
   justify-content: center;
   cursor: pointer;
+}
+
+/*About Me Section*/
+.aboutMe {
+  background: #1c1a19;
+  display: flex;
+  flex-direction: column;
+  background-image: url(Sources/BackgroundMobile.svg);
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 27%;
+}
+
+.aboutMe {
+  padding: 33.55% 6% 0;
+}
+
+.aboutText h2 {
+  font-size: 4.5em;
+  font-family: 'Crete Round', sans-serif;
+  font-weight: 400;
+  margin: 0;
+  color: #ff6b00;
+}
+
+.aboutText p {
+  font-size: 1em;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 1.5em;
+  color: #f4f5f7;
+  margin: 0;
+  padding: 7.7% 0;
+}
+
+.resumeButton {
+  background: #ff6b00;
+  color: #fff;
+  padding: 5%;
+  font-size: 1em;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  line-height: 1.5em;
+  width: 38%;
+  cursor: pointer;
+  margin-bottom: 66.5%;
+}
+
+.aboutLine {
+  border: 1px solid #fff;
+  border-top: 0;
+  margin-top: 7%;
+}
+
+.skillsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 38.2% 0 20%;  
+  margin: 0;
+}
+
+.languagesHead {
+  display: flex;
+  justify-content: center;
+  padding: 4.1%;
+}
+
+.languagesHead h3 {
+  font-size: 2em;
+  font-family: 'InaiMathi', sans-serif;
+  font-weight: 700;
+  margin: 0;
+  color: #fff;
+  padding: 5%;
+}
+
+.languagesList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+
+.languagesList li{
+  font-size: 1.38em;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 2.6em;
+  color: #fff;
+}
+
+.frameworksHead {
+  display: flex;
+  justify-content: center;
+  padding: 4.1%;
+}
+
+.frameworksHead h3 {
+  font-size: 2em;
+  font-family: 'InaiMathi', sans-serif;
+  font-weight: 700;
+  margin: 0;
+  color: #fff;
+  padding: 5%;
+}
+
+.frameworksList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+
+.frameworksList li{
+  font-size: 1.38em;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 2.6em;
+  color: #fff;
+}
+
+.skillsHead {
+  display: flex;
+  justify-content: center;
+  padding: 4.1%;
+}
+
+.skillsHead h3 {
+  font-size: 2em;
+  font-family: 'InaiMathi', sans-serif;
+  font-weight: 700;
+  margin: 0;
+  color: #fff;
+  padding: 5%;
+}
+
+.skillsList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+
+.skillsList li{
+  font-size: 1.38em;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 2.6em;
+  color: #fff;
 }
 
 /* 768px */
@@ -300,5 +454,83 @@ button {
     display: flex;
     flex-direction: column;
     width: 20%;
+  }
+
+  .worksHeadLine {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 15% 6%;
+  }
+
+  .topLine {
+    width: 50%;
+    margin: auto;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 33.333% 33.333% 33.333%;
+    gap: 2%;
+  }
+
+  .mainCard {
+    display: flex;
+    flex-direction: row;
+    grid-column: 1/4;
+    grid-row: 1/2;
+  }
+
+  .genericCard3 {
+    padding-top: 19%;
+  }
+
+  .cardContent {
+    width: 90%;
+    padding: 0 6%;
+  }
+
+  .cardContent h3  {
+    padding: 0;
+  }
+
+  .projectsButton {
+    width: 33%;
+  }
+
+  .projectsButton2 {
+    display: none;
+  }
+
+  .aboutMe{
+    padding-top: 17.3%;
+    background-image: url(Sources/BackgroundDesktop.svg);
+    background-size: 40%;
+    background-position-y: 20%;
+  }
+
+  .aboutText {
+    width: 50%;
+  }
+
+  .aboutText p {
+    padding: 2% 0;
+  }
+
+  .resumeButton {
+    width: 18%;
+    padding: 2%;
+    margin: 3% 0 10%;
+  }
+
+  .skillsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 15%;
+  }
+
+  .skillsHead {
+    padding-top: 26%;
   }
 }
