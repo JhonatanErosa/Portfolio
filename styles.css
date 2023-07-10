@@ -238,10 +238,8 @@ button {
 }
 
 .categories {
-  display: flex;
-  justify-content: space-between;
   padding: 0;
-  width: 85%;
+  width: 100%;
 }
 
 .categories li {
@@ -253,6 +251,9 @@ button {
   font-weight: 500;
   line-height: 1.25em;
   cursor: pointer;
+  float: left;
+  margin-right: 5%;
+  margin-bottom: 5%;
 }
 
 .projectsButton2 {
