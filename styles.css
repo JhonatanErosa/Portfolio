@@ -440,7 +440,7 @@ button {
 }
 
 .contact-section {
-  padding: 20% 4%;
+  padding: 20% 4% 0%;
 }
 
 .contact-section h2 {
@@ -457,6 +457,12 @@ button {
   padding: 0;
 }
 
+.contact-section li {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
 .contact-section input {
   width: 90%;
   margin-bottom: 5%;
@@ -470,6 +476,32 @@ button {
   background: #FBF8F7;
   border: none;
   padding: 3%;
+}
+
+.contact-Button button {
+  background: #ff6b00;
+  color: #fff;
+  padding: 5%;
+  margin-top: 5%;
+  font-size: 1em;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  line-height: 1.5em;
+  width: 38%;
+  cursor: pointer;
+  margin-bottom: 10.5%;
+  align-self: center;
+  text-align: center;
+}
+
+.footersIcons {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.footersIcons li{
+  margin: 2%;
 }
 
 
