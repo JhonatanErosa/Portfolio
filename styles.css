@@ -439,6 +439,40 @@ button {
   color: #fff;
 }
 
+.contact-section {
+  padding: 20% 4%;
+}
+
+.contact-section h2 {
+  font-size: 2em;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  color: #172B4D;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-section ul {
+  padding: 0;
+}
+
+.contact-section input {
+  width: 90%;
+  margin-bottom: 5%;
+  padding: 3%;
+  border: 0;
+  border-bottom: 1px solid #DBD8D7;
+}
+
+.contact-section textarea {
+  width: 96%;
+  background: #FBF8F7;
+  border: none;
+  padding: 3%;
+}
+
+
 /* 768px */
 @media (min-width: 768px) {
   .navItems {
