@@ -84,7 +84,7 @@ button {
 }
 
 @keyframes typing {
-  to { 
+  to {
     width: 0%;
   }
 }
@@ -110,6 +110,56 @@ button {
   width: 60%;
   display: flex;
   padding-left: 0;
+}
+
+.mainCategories li {
+  border: 1px solid #8993a4;
+  padding: 3.5%;
+  cursor: pointer;
+  position: relative;
+}
+
+.categories li {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.24);
+  padding: 3.5%;
+  font-size: 1em;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  line-height: 1.25em;
+  cursor: pointer;
+}
+
+.languagesList li {
+  font-size: 1.38em;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 2.6em;
+  color: #fff;
+}
+
+.frameworksList li {
+  font-size: 1.38em;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 2.6em;
+  color: #fff;
+}
+
+.skillsList li {
+  font-size: 1.38em;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 2.6em;
+  color: #fff;
+}
+
+.contact-section li {
+  width: 100%;
+}
+
+.footersIcons li {
+  margin: 2%;
 }
 
 .mainSocial li:hover {
@@ -182,13 +232,6 @@ button {
   margin: 5.8% 0 3.5%;
   padding: 0;
   padding-bottom: 5%;
-}
-
-.mainCategories li {
-  border: 1px solid #8993a4;
-  padding: 3.5%;
-  cursor: pointer;
-  position: relative;
 }
 
 .mainCategories li::after {
@@ -290,17 +333,6 @@ button {
   justify-content: space-between;
   padding: 0;
   width: 85%;
-}
-
-.categories li {
-  color: #fff;
-  background: rgba(255, 255, 255, 0.24);
-  padding: 3.5%;
-  font-size: 1em;
-  font-family: 'Inter', sans-serif;
-  font-weight: 500;
-  line-height: 1.25em;
-  cursor: pointer;
 }
 
 .projectsButton2 {
@@ -419,14 +451,6 @@ button {
   padding: 0;
 }
 
-.languagesList li {
-  font-size: 1.38em;
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
-  line-height: 2.6em;
-  color: #fff;
-}
-
 .frameworksHead {
   display: flex;
   justify-content: center;
@@ -447,14 +471,6 @@ button {
   flex-direction: column;
   align-items: center;
   padding: 0;
-}
-
-.frameworksList li {
-  font-size: 1.38em;
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
-  line-height: 2.6em;
-  color: #fff;
 }
 
 .skillsHead {
@@ -479,14 +495,6 @@ button {
   padding: 0;
 }
 
-.skillsList li {
-  font-size: 1.38em;
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
-  line-height: 2.6em;
-  color: #fff;
-}
-
 .contact-section {
   padding: 20% 4% 0%;
 }
@@ -505,10 +513,6 @@ button {
   padding: 0;
   display: flex;
   flex-direction: column;
-}
-
-.contact-section li {
-  width: 100%;
 }
 
 .contact-section input {
@@ -570,11 +574,7 @@ button {
   border-top: 1px solid #dfe1e6;
 }
 
-.footersIcons li {
-  margin: 2%;
-}
-
-.footersIcons  li:hover {
+.footersIcons li:hover {
   filter: invert(45%) sepia(63%) saturate(1768%) hue-rotate(358deg) brightness(97%) contrast(111%);
   transform: scale(1.3);
   transition: 0.3s;
@@ -593,12 +593,12 @@ button {
     cursor: pointer;
   }
 
-  .navItems a{
+  .navItems a {
     color: #fff;
     position: relative;
   }
 
-  .navItems a:after {
+  .navItems a::after {
     content: "";
     width: 0;
     height: 0.25em;
@@ -610,11 +610,11 @@ button {
     will-change: width;
   }
 
-  .navItems a:hover:after {
+  .navItems a:hover::after {
     width: 100%;
     right: 0;
   }
-  
+
   .navContainer {
     padding-left: 12.2%;
   }
