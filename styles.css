@@ -65,6 +65,24 @@ button {
   line-height: 64px;
   color: #ff6b00;
   margin: 0;
+  position: relative;
+  width: 105%;
+}
+
+.mainContent h1::after {
+  content: "|";
+  position: absolute;
+  right: 0;
+  color: #ff6b00;
+  background-color: #1c1a19;
+  width: 100%;
+  animation: typing 2.5s steps(12) alternate infinite;
+}
+
+@keyframes typing {
+  to { 
+    width: 0%;
+  }
 }
 
 .mainContent h2 {
@@ -561,6 +579,7 @@ button {
   .mainContent {
     order: 1;
     margin: 0 40% 0 5%;
+    width: 90%;
   }
 
   .mainSocial {
@@ -770,6 +789,7 @@ button {
   .mainContent {
     order: 1;
     margin: 0 57% 0 2%;
+    width: 75%;
   }
 
   .mainContainer {
