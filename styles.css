@@ -73,6 +73,19 @@ button {
   width: 100%;
 }
 
+.navItems-menu li a img {
+  display: none;
+}
+.close-button {
+  display: flex;
+  justify-content: end;
+  padding-right: 3.5rem;
+}
+.x-button {
+  width: 1.5rem;
+  height: auto;
+}
+
 .hamburger {
   align-self: center;
   cursor: pointer;
