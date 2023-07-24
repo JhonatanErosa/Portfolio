@@ -50,20 +50,24 @@ button {
   flex-direction: column;
   height: 100%;
   left: 0;
-  width: 100%;
+  width: 86%;
   background: rgba(60, 58, 57, 1);
   z-index: 10;
   margin: 0;
-  padding-left: 2rem;
-  padding-top: 3%;
+  padding: 3% 7%;
 }
+
 .navItems-menu li {
   margin-bottom: 1.5rem;
   border-bottom: 1px solid #6F6C6B;
+  padding: 2% 5%;
+  
 }
+
 .navItems-menu li:nth-child(5){
   border-bottom: none;
 }
+
 .navItems-menu li a {
   font-size: 2em;
   font-family: 'Inter', sans-serif;
@@ -73,22 +77,39 @@ button {
   width: 100%;
 }
 
+.navItems-menu li a:hover{
+  filter: invert(45%) sepia(63%) saturate(1768%) hue-rotate(358deg) brightness(97%) contrast(111%);
+}
+
 .navItems-menu li a img {
   display: none;
 }
+
 .close-button {
   display: flex;
   justify-content: end;
-  padding-right: 3.5rem;
+  margin: 0 0.5rem 1.5rem 0;
 }
+
 .x-button {
   width: 1.5rem;
   height: auto;
+  cursor: pointer;
+  transition: transform 200ms linear;
+}
+
+.x-button:hover {
+  transform: rotate(90deg);
 }
 
 .hamburger {
   align-self: center;
   cursor: pointer;
+  transition: transform 200ms linear;
+}
+
+.hamburger:hover {
+  transform: rotate(90deg);
 }
 
 /* Main Container */
