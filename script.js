@@ -76,3 +76,59 @@ let projects = [
     sourceURL: 'https://github.com/JhonatanErosa/Portfolio'
   },
 ];
+
+let projectsSection = document.querySelector('#projectsSection');
+//popUp function
+function showModal(index) {
+  let modal = document.createElement('div');
+  modal.classList.add('modal');
+  let modalContent = document.createElement('div');
+  modalContent.classList.add('modal-content');
+  let project = projects[index];
+  let projectName = project.name;
+  let projectDescription = project.description;
+  let projectImage = project.featuredImage;
+  let projectLiveDemo = project.liveDemo;
+  let projectSourceURL = project.sourceURL;
+  modalContent.innerHTML = `
+  <div class='modalHeader'>
+    <h3>${projectName}</h3>
+    <img id='closeButton' src="Sources/Icons/IconCancel.svg" alt="">
+  </div>
+  <ul class='categories'>
+      ${project.technologies.map((element) => `<li>${element}</li>`).join('')}
+  </ul>
+  <div id='contentModal'>
+    <img src='${projectImage}' alt=''>
+    <div id='descriptionModal'>
+      <p>${projectDescription}</p>
+      <ul class='modalLinks'>
+        <li>
+          <a href='${projectLiveDemo}'>See live</a>
+          <img src="Sources/Icons/IconSeeLive.svg" alt="">
+        </li>
+        <li>
+          <a href='${projectSourceURL}'>See source</a>
+          <img src="Sources/Icons/IconSeeSource.svg" alt="">
+        </li>
+      </ul>
+    </div>
+  </div>
+  `;
+  let closeButton2 = modalContent.querySelector('.modalHeader');
+  let xButton = closeButton2.querySelector('img');
+  modal.appendChild(modalContent);
+  projectsSection.appendChild(modal);
+  modal.style.display = 'block';
+  xButton.addEventListener('click', function () {
+    modal.style.display = 'none';
+    projectsSection.removeChild(modal);
+  });
+  window.addEventListener('click', function(event) {
+    if(event.target === modal) {
+      modal.style.display = 'none';
+      projectsSection.removeChild(modal);
+    }
+  });
+};
+
