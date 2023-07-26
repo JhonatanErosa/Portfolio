@@ -78,6 +78,7 @@ let projects = [
 ];
 
 let projectsSection = document.querySelector('#projectsSection');
+
 //popUp function
 function showModal(index) {
   let modal = document.createElement('div');
@@ -132,3 +133,60 @@ function showModal(index) {
   });
 };
 
+//Create main card function
+let mainCard = document.createElement('div');
+mainCard.classList.add('mainCard');
+projectsSection.appendChild(mainCard)
+
+let cardImage = document.createElement('div');
+cardImage.classList.add('cardImage');
+cardImage.innerHTML = `<img src="${projects[0].featuredImage}">`;
+mainCard.appendChild(cardImage);
+
+let mainCardContent = document.createElement('div');
+mainCardContent.classList.add('cardContent');
+mainCardContent.innerHTML = `
+<h3>${projects[0].name}</h3>
+<p>${projects[0].description}</p>
+<ul class="mainCategories">
+  ${projects[0].technologies.map((element) => `<li>${element}</li>`).join('')}
+</ul>
+<a class='projectsButton'>See project</a>
+`;
+mainCard.appendChild(mainCardContent);
+
+let projectButton = mainCardContent.querySelector('.projectsButton',);
+projectButton.addEventListener('click', function () {
+  showModal([0]);
+});
+
+//Create cards function
+function createProjectCard (project, index) {
+  let card = document.createElement('div');
+  card.classList.add('genericCard1');
+  card.style.backgroundImage = `linear-gradient(rgba(38, 38, 38, 0), rgba(38, 38, 38, 0.9)), url(${project.featuredImage})`;
+
+  let cardContent = document.createElement('div');
+  cardContent.classList.add('cardContent2');
+  cardContent.innerHTML = `
+  <h2>${project.name}</h2>
+  <p>${project.description}</p>
+  <ul class='categories'>
+    ${project.technologies.map((element) => `<li>${element}</li>`).join('')}
+  </ul>
+  <a class='projectsButton2'>See project</a>
+  `;
+  card.appendChild(cardContent);
+
+  let projectButton2 = cardContent.querySelector('.projectsButton2',);
+  projectButton2.addEventListener('click', function () {
+    showModal(index);
+  });
+
+  return card;
+};
+
+for (let i = 1 ; i < projects.length; i += 1) {
+  let card = createProjectCard(projects[i], i);
+  projectsSection.appendChild(card);
+};
