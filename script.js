@@ -191,3 +191,8 @@ for (let i = 1; i < projects.length; i += 1) {
   const card = createProjectCard(projects[i], i);
   projectsSection.appendChild(card);
 }
+
+//Validate email form
+const form = document.getElementById('form');
+const emailValidation = document.querySelector('.emailValidation');
+const email = document.getElementById('email');
