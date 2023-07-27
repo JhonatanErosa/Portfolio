@@ -192,26 +192,25 @@ for (let i = 1; i < projects.length; i += 1) {
   projectsSection.appendChild(card);
 }
 
-//Validate email form
+// Validate email form
 const form = document.getElementById('form');
 const emailValidation = document.querySelector('.emailValidation');
 const email = document.getElementById('email');
 
-function validateInputs () {
+function validateInputs() {
   const valueEmail = email.value;
   if (valueEmail !== valueEmail.toLowerCase()) {
     emailValidation.classList.add('invalidEmail');
     return false;
-  } else {
-    emailValidation.classList.remove('invalidEmail');
-    return true;
   }
-};
+  emailValidation.classList.remove('invalidEmail');
+  return true;
+}
 
 form.addEventListener('submit', (elem) => {
   elem.preventDefault();
-  const valid = validateInputs ();
-  if(valid === true) {
-  form.submit();
-  };
+  const valid = validateInputs();
+  if (valid === true) {
+    form.submit();
+  }
 });

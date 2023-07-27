@@ -180,6 +180,10 @@ button {
   cursor: pointer;
 }
 
+.invalidEmail small img {
+  width: 5%;
+}
+
 .navItems-menu li a img {
   display: none;
 }
@@ -727,7 +731,7 @@ body.modal-open {
   line-height: 1.5em;
   width: 50%;
   cursor: pointer;
-  margin-bottom: 15%;
+  margin-bottom: 5%;
   text-align: center;
 }
 
@@ -740,6 +744,26 @@ body.modal-open {
 .contact-Button button:active {
   background: rgba(224, 83, 4, 1);
   color: rgba(244, 241, 240, 1);
+}
+
+.emailValidation small {
+  visibility: hidden;
+  color: red;
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+  background: #ff848480;
+  border-radius: 0.2rem;
+  padding: 0.5rem;
+}
+
+.invalidEmail small {
+  visibility: visible;
+}
+
+.emailValidation {
+  display: grid;
+  justify-content: center;
+  margin-bottom: 2rem;
 }
 
 .footersIcons {
