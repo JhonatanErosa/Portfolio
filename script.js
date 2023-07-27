@@ -164,7 +164,8 @@ projectButton.addEventListener('click', function () {
 function createProjectCard (project, index) {
   let card = document.createElement('div');
   card.classList.add('genericCard1');
-  card.style.backgroundImage = `linear-gradient(rgba(38, 38, 38, 0), rgba(38, 38, 38, 0.9)), url(${project.featuredImage})`;
+  card.setAttribute('id', 'genericCard')
+  card.style.backgroundImage = `url(${project.featuredImage})`;
 
   let cardContent = document.createElement('div');
   cardContent.classList.add('cardContent2');
