@@ -180,6 +180,10 @@ button {
   cursor: pointer;
 }
 
+.invalidEmail small img {
+  width: 5%;
+}
+
 .navItems-menu li a img {
   display: none;
 }
@@ -312,8 +316,9 @@ button {
   transform: translate(-50%, -50%);
   background-color: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(3px);
-  padding: 3.5rem 1.2rem;
+  padding: 30% 1.2rem 6%;
   width: 90%;
+  height: 100vh;
   z-index: 9999;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
@@ -727,7 +732,7 @@ body.modal-open {
   line-height: 1.5em;
   width: 50%;
   cursor: pointer;
-  margin-bottom: 15%;
+  margin-bottom: 5%;
   text-align: center;
 }
 
@@ -740,6 +745,26 @@ body.modal-open {
 .contact-Button button:active {
   background: rgba(224, 83, 4, 1);
   color: rgba(244, 241, 240, 1);
+}
+
+.emailValidation small {
+  visibility: hidden;
+  color: red;
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+  background: #ff848480;
+  border-radius: 0.2rem;
+  padding: 0.5rem;
+}
+
+.invalidEmail small {
+  visibility: visible;
+}
+
+.emailValidation {
+  display: grid;
+  justify-content: center;
+  margin-bottom: 2rem;
 }
 
 .footersIcons {
@@ -840,7 +865,7 @@ body.modal-open {
   }
 
   .modal {
-    padding: 8rem 2.2rem;
+    padding: 25% 2.2rem 0;
   }
 
   .modal-content {
@@ -1104,7 +1129,7 @@ body.modal-open {
   }
 
   .modal {
-    padding: 8rem 3.9rem;
+    padding: 6rem 3.9rem 1rem;
   }
 
   .modal-content {
@@ -1196,5 +1221,11 @@ body.modal-open {
 
   .footersIcons {
     padding: 0;
+  }
+}
+
+@media (min-width: 1280px) {
+  .modal {
+    padding: 2rem 3.9rem 1rem;
   }
 }

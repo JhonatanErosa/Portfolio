@@ -191,3 +191,26 @@ for (let i = 1; i < projects.length; i += 1) {
   const card = createProjectCard(projects[i], i);
   projectsSection.appendChild(card);
 }
+
+// Validate email form
+const form = document.getElementById('form');
+const emailValidation = document.querySelector('.emailValidation');
+const email = document.getElementById('email');
+
+function validateInputs() {
+  const valueEmail = email.value;
+  if (valueEmail !== valueEmail.toLowerCase()) {
+    emailValidation.classList.add('invalidEmail');
+    return false;
+  }
+  emailValidation.classList.remove('invalidEmail');
+  return true;
+}
+
+form.addEventListener('submit', (elem) => {
+  elem.preventDefault();
+  const valid = validateInputs();
+  if (valid === true) {
+    form.submit();
+  }
+});

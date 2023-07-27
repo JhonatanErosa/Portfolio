@@ -108,7 +108,7 @@
     </section>
     <div id="contact" class="contact-section">
             <h2>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
-            <form action="https://formspree.io/f/mzblbkjp" method="post">
+            <form action="https://formspree.io/f/mzblbkjp" method="post" id="form">
                 <ul>
                     <li>
                         <input type="text" aria-label="user-name" name="name" id="user-name" placeholder="Full name" required maxlength="30">
@@ -122,6 +122,9 @@
                     <li class="contact-Button" >
                         <button type="submit">Get in touch</button>
                     </li>
+                    <div class="emailValidation">
+                        <small><img src="Sources/Icons/icons8-alta-importancia-30.png" alt=""> Email address should be in lower case</small>
+                    </div>
                 </ul>
             </form>
     </div>
