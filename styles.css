@@ -312,7 +312,7 @@ button {
   transform: translate(-50%, -50%);
   background-color: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(3px);
-  padding: 2.9rem 1.2rem;
+  padding: 3.5rem 1.2rem;
   width: 90%;
   z-index: 9999;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
@@ -337,8 +337,15 @@ button {
 
 .modal-content .categories {
   margin: 3% 0;
-  width: 80%;
   flex-wrap: wrap;
+  display: flex;
+  justify-content: start;
+}
+
+.modal-content .categories li {
+  margin-right: 0.5rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
 }
 
 .modalLinks li:hover {
@@ -855,13 +862,13 @@ body.modal-open {
   }
 
   .modal-content .categories {
-    width: 40%;
+    width: 100%;
     margin-top: 0;
   }
 
   .modal-content li {
     margin: 0;
-    padding: 2%;
+    padding: 1%;
   }
 
   #contentModal img {
@@ -920,6 +927,7 @@ body.modal-open {
 
   #descriptionModal .modalLinks li {
     margin-right: 0.5rem;
+    padding: 0.3rem;
   }
 
   .grid {
@@ -1104,12 +1112,12 @@ body.modal-open {
   }
 
   .modal-content .categories {
-    width: 32%;
+    width: 40%;
     margin-top: 0;
   }
 
   .modal-content li {
-    padding: 3%;
+    padding: 2%;
   }
 
   #contentModal img {
@@ -1126,6 +1134,7 @@ body.modal-open {
 
   #descriptionModal .modalLinks li {
     margin-right: 1.5rem;
+    padding: 0.5rem;
     font-weight: 400;
   }
 
