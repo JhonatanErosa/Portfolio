@@ -17,15 +17,15 @@ for (let i = 0; i < linksPopUp.length; i += 1) {
   linksPopUp[i].addEventListener('click', closeWindow);
 }
 
-//PopUp Window
-let projects = [
+// PopUp Window
+const projects = [
   {
     name: 'Multi-Post Stories',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industrys standard.',
     featuredImage: 'Sources/MultiPostStories.svg',
-    technologies: ['CSS','HTML', 'Bootstrap', 'Ruby'],
+    technologies: ['CSS', 'HTML', 'Bootstrap', 'Ruby'],
     liveDemo: 'https://jhonatanerosa.github.io/Portfolio/',
-    sourceURL: 'https://github.com/JhonatanErosa/Portfolio'
+    sourceURL: 'https://github.com/JhonatanErosa/Portfolio',
   },
   {
     name: 'Profesional Art Printing Data',
@@ -33,7 +33,7 @@ let projects = [
     featuredImage: 'Sources/SnapshootPortfolio.svg',
     technologies: ['HTML', 'Bootstrap', 'Ruby'],
     liveDemo: 'https://jhonatanerosa.github.io/Portfolio/',
-    sourceURL: 'https://github.com/JhonatanErosa/Portfolio'
+    sourceURL: 'https://github.com/JhonatanErosa/Portfolio',
   },
   {
     name: 'Data Dashboard Healthcare',
@@ -41,7 +41,7 @@ let projects = [
     featuredImage: 'Sources/Dashboard.svg',
     technologies: ['HTML', 'Bootstrap', 'Ruby'],
     liveDemo: 'https://jhonatanerosa.github.io/Portfolio/',
-    sourceURL: 'https://github.com/JhonatanErosa/Portfolio'
+    sourceURL: 'https://github.com/JhonatanErosa/Portfolio',
   },
   {
     name: 'Website Portfolio',
@@ -49,7 +49,7 @@ let projects = [
     featuredImage: 'Sources/WebSitePortfolio.svg',
     technologies: ['HTML', 'Bootstrap', 'Ruby'],
     liveDemo: 'https://jhonatanerosa.github.io/Portfolio/',
-    sourceURL: 'https://github.com/JhonatanErosa/Portfolio'
+    sourceURL: 'https://github.com/JhonatanErosa/Portfolio',
   },
   {
     name: 'Profesional Art Printing Data',
@@ -57,7 +57,7 @@ let projects = [
     featuredImage: 'Sources/SnapshootPortfolio.svg',
     technologies: ['HTML', 'Bootstrap', 'Ruby'],
     liveDemo: 'https://jhonatanerosa.github.io/Portfolio/',
-    sourceURL: 'https://github.com/JhonatanErosa/Portfolio'
+    sourceURL: 'https://github.com/JhonatanErosa/Portfolio',
   },
   {
     name: 'Data Dashboard Healthcare',
@@ -65,7 +65,7 @@ let projects = [
     featuredImage: 'Sources/Dashboard.svg',
     technologies: ['HTML', 'Bootstrap', 'Ruby'],
     liveDemo: 'https://jhonatanerosa.github.io/Portfolio/',
-    sourceURL: 'https://github.com/JhonatanErosa/Portfolio'
+    sourceURL: 'https://github.com/JhonatanErosa/Portfolio',
   },
   {
     name: 'Website Portfolio',
@@ -73,24 +73,24 @@ let projects = [
     featuredImage: 'Sources/WebSitePortfolio.svg',
     technologies: ['HTML', 'Bootstrap', 'Ruby'],
     liveDemo: 'https://jhonatanerosa.github.io/Portfolio/',
-    sourceURL: 'https://github.com/JhonatanErosa/Portfolio'
+    sourceURL: 'https://github.com/JhonatanErosa/Portfolio',
   },
 ];
 
-let projectsSection = document.querySelector('#projectsSection');
+const projectsSection = document.querySelector('#projectsSection');
 
-//popUp function
+// popUp function
 function showModal(index) {
-  let modal = document.createElement('div');
+  const modal = document.createElement('div');
   modal.classList.add('modal');
-  let modalContent = document.createElement('div');
+  const modalContent = document.createElement('div');
   modalContent.classList.add('modal-content');
-  let project = projects[index];
-  let projectName = project.name;
-  let projectDescription = project.description;
-  let projectImage = project.featuredImage;
-  let projectLiveDemo = project.liveDemo;
-  let projectSourceURL = project.sourceURL;
+  const project = projects[index];
+  const projectName = project.name;
+  const projectDescription = project.description;
+  const projectImage = project.featuredImage;
+  const projectLiveDemo = project.liveDemo;
+  const projectSourceURL = project.sourceURL;
   modalContent.innerHTML = `
   <div class='modalHeader'>
     <h3>${projectName}</h3>
@@ -116,34 +116,34 @@ function showModal(index) {
     </div>
   </div>
   `;
-  let closeButton2 = modalContent.querySelector('.modalHeader');
-  let xButton = closeButton2.querySelector('img');
+  const closeButton2 = modalContent.querySelector('.modalHeader');
+  const xButton = closeButton2.querySelector('img');
   modal.appendChild(modalContent);
   projectsSection.appendChild(modal);
   modal.style.display = 'block';
-  xButton.addEventListener('click', function () {
+  xButton.addEventListener('click', () => {
     modal.style.display = 'none';
     projectsSection.removeChild(modal);
   });
-  window.addEventListener('click', function(event) {
-    if(event.target === modal) {
+  window.addEventListener('click', (event) => {
+    if (event.target === modal) {
       modal.style.display = 'none';
       projectsSection.removeChild(modal);
     }
   });
-};
+}
 
-//Create main card function
-let mainCard = document.createElement('div');
+// Create main card function
+const mainCard = document.createElement('div');
 mainCard.classList.add('mainCard');
-projectsSection.appendChild(mainCard)
+projectsSection.appendChild(mainCard);
 
-let cardImage = document.createElement('div');
+const cardImage = document.createElement('div');
 cardImage.classList.add('cardImage');
 cardImage.innerHTML = `<img src="${projects[0].featuredImage}">`;
 mainCard.appendChild(cardImage);
 
-let mainCardContent = document.createElement('div');
+const mainCardContent = document.createElement('div');
 mainCardContent.classList.add('cardContent');
 mainCardContent.innerHTML = `
 <h3>${projects[0].name}</h3>
@@ -155,19 +155,19 @@ mainCardContent.innerHTML = `
 `;
 mainCard.appendChild(mainCardContent);
 
-let projectButton = mainCardContent.querySelector('.projectsButton',);
-projectButton.addEventListener('click', function () {
+const projectButton = mainCardContent.querySelector('.projectsButton');
+projectButton.addEventListener('click', () => {
   showModal([0]);
 });
 
-//Create cards function
-function createProjectCard (project, index) {
-  let card = document.createElement('div');
+// Create cards function
+function createProjectCard(project, index) {
+  const card = document.createElement('div');
   card.classList.add('genericCard1');
-  card.setAttribute('id', 'genericCard')
+  card.setAttribute('id', 'genericCard');
   card.style.backgroundImage = `url(${project.featuredImage})`;
 
-  let cardContent = document.createElement('div');
+  const cardContent = document.createElement('div');
   cardContent.classList.add('cardContent2');
   cardContent.innerHTML = `
   <h2>${project.name}</h2>
@@ -179,15 +179,15 @@ function createProjectCard (project, index) {
   `;
   card.appendChild(cardContent);
 
-  let projectButton2 = cardContent.querySelector('.projectsButton2',);
-  projectButton2.addEventListener('click', function () {
+  const projectButton2 = cardContent.querySelector('.projectsButton2');
+  projectButton2.addEventListener('click', () => {
     showModal(index);
   });
 
   return card;
-};
+}
 
-for (let i = 1 ; i < projects.length; i += 1) {
-  let card = createProjectCard(projects[i], i);
+for (let i = 1; i < projects.length; i += 1) {
+  const card = createProjectCard(projects[i], i);
   projectsSection.appendChild(card);
-};
+}

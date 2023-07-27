@@ -70,6 +70,13 @@ button {
   position: relative;
 }
 
+.categories {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  width: 80%;
+}
+
 .categories li {
   color: #fff;
   background: rgba(255, 255, 255, 0.24);
@@ -113,6 +120,30 @@ button {
   margin: 2%;
 }
 
+.modal-content li {
+  display: flex;
+  justify-content: space-between;
+  margin: 5.8% 0 3.5%;
+  padding: 3%;
+  color: #3c3a39;
+  border: 1px solid #8993a4;
+}
+
+.modalLinks {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.modalLinks li {
+  padding-left: 1%;
+  padding-right: 1%;
+  background: #ff6b00;
+  width: 45%;
+  border: none;
+  justify-content: space-evenly;
+}
+
 .navItems-menu li:nth-child(5) {
   border-bottom: none;
 }
@@ -130,12 +161,23 @@ button {
   width: 100%;
 }
 
+.modalLinks li a {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+}
+
 .navItems-menu li a:hover {
   filter: invert(45%) sepia(63%) saturate(1768%) hue-rotate(358deg) brightness(97%) contrast(111%);
 }
 
 .cardImage img {
   width: 100%;
+}
+
+.modalHeader img {
+  cursor: pointer;
 }
 
 .navItems-menu li a img {
@@ -289,27 +331,14 @@ button {
 
 .modalHeader h3 {
   font-size: 2rem;
-  color: #172B4D;
+  color: #172b4d;
   margin: 1rem 0;
-}
-
-.modalHeader img {
-  cursor: pointer;
 }
 
 .modal-content .categories {
   margin: 3% 0;
   width: 80%;
   flex-wrap: wrap;
-}
-
-.modal-content li{
-  display: flex;
-  justify-content: space-between;
-  margin: 5.8% 0 3.5%;
-  padding: 3%;
-  color: #3C3A39;
-  border: 1px solid #8993a4;
 }
 
 .modalLinks li:hover {
@@ -323,45 +352,13 @@ button {
   color: rgba(244, 241, 240, 1);
 }
 
-#contentModal img{
+#contentModal img {
   object-fit: cover;
-  width:100%;
-  height:100%;
+  width: 100%;
+  height: 100%;
 }
 
-.modalLinks {
-  padding: 0;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.modalLinks li {
-  padding-left: 1%;
-  padding-right: 1%;
-  background: #ff6b00;
-  width: 45%;
-  border: none;
-  justify-content: space-evenly;
-}
-
-.modalLinks li:hover {
-  background: linear-gradient(0deg, #fff5e1, #fff5e1), linear-gradient(0deg, #f55800, #f55800);
-  border: 1px solid rgba(245, 88, 0, 1);
-}
-
-.modalLinks li:active {
-  background: rgba(224, 83, 4, 1);
-  color: rgba(244, 241, 240, 1);
-}
-
-.modalLinks li a {
-  color: #fff;
-  font-weight: 700;
-  font-size: 1rem;
-  font-family: 'Inter', sans-serif;
-}
-
-.modalLinks li a:hover{
+.modalLinks li a:hover {
   color: rgba(245, 88, 0, 1);
 }
 
@@ -463,8 +460,12 @@ body.modal-open {
   background-position: center;
 }
 
-#genericCard .cardContent2{
-  background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%);;
+.cardContent2 {
+  padding: 22% 4.5% 0;
+}
+
+#genericCard .cardContent2 {
+  background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%);
 }
 
 .genericCard2 {
@@ -485,10 +486,6 @@ body.modal-open {
   background-position: center;
 }
 
-.cardContent2 {
-  padding: 22% 4.5% 0;
-}
-
 .cardContent2 h2 {
   color: #fff;
   font-size: 2em;
@@ -504,13 +501,6 @@ body.modal-open {
   color: #fff;
   margin: 4% 0;
   line-height: 1.5em;
-}
-
-.categories {
-  display: flex;
-  justify-content: space-between;
-  padding: 0;
-  width: 85%;
 }
 
 .projectsButton2 {
@@ -842,51 +832,95 @@ body.modal-open {
     margin: auto;
   }
 
-.modal {
-  padding: 8rem 2.2rem;
-}
+  .modal {
+    padding: 8rem 2.2rem;
+  }
 
-.modal-content {
-  display: flex;
-  flex-direction: column;
-  padding: 0.5rem 1rem 2rem;
-}
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 1rem 2rem;
+  }
 
-#contentModal {
-  display: flex;
-  flex-direction: row;
-}
+  #contentModal {
+    display: flex;
+    flex-direction: row;
+  }
 
-.modal-content .categories {
-  width: 40%;
-  margin-top: 0;
-}
+  .categories {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    width: 85%;
+  }
 
-.modal-content li{
-  margin: 0;
-  padding: 2%;
-}
+  .modal-content .categories {
+    width: 40%;
+    margin-top: 0;
+  }
 
-#contentModal img{
-  width: 60%;
-}
+  .modal-content li {
+    margin: 0;
+    padding: 2%;
+  }
 
-#descriptionModal{
-  margin-left: 0.5rem;
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
+  #contentModal img {
+    width: 60%;
+  }
 
-#descriptionModal .modalLinks {
-  margin: 0;
-  justify-content: left;
-}
+  #descriptionModal {
+    margin-left: 0.5rem;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
-#descriptionModal .modalLinks li{
-  margin-right: 0.5rem;
-}
+  .aboutText p {
+    padding: 2% 0;
+  }
+
+  .contact-section li {
+    display: flex;
+    flex-direction: row;
+    align-self: left;
+  }
+
+  .skillsList li {
+    width: 100%;
+  }
+
+  .frameworksList li {
+    width: 100%;
+  }
+
+  .languagesList li {
+    width: 100%;
+  }
+
+  .contact-section h2 {
+    width: 40%;
+    text-align: left;
+  }
+
+  .genericCard1:hover > .cardContent2 h2,
+  .genericCard1:hover > .cardContent2 p,
+  .genericCard1:hover > .cardContent2 li {
+    visibility: hidden;
+  }
+
+  #descriptionModal p {
+    margin-top: 0;
+  }
+
+  #descriptionModal .modalLinks {
+    margin: 0;
+    justify-content: left;
+  }
+
+  #descriptionModal .modalLinks li {
+    margin-right: 0.5rem;
+  }
 
   .grid {
     display: grid;
@@ -915,10 +949,12 @@ body.modal-open {
     cursor: pointer;
   }
 
-  .genericCard1:hover > .cardContent2 h2, 
-  .genericCard1:hover > .cardContent2 p,
-  .genericCard1:hover > .cardContent2 li {
-    visibility: hidden;
+  .genericCard3:hover > .cardContent2 {
+    display: none;
+  }
+
+  .genericCard2:hover > .cardContent2 {
+    display: none;
   }
 
   #genericCard:hover > .cardContent2 {
@@ -936,10 +972,6 @@ body.modal-open {
     padding-bottom: 0;
     height: 100%;
     cursor: pointer;
-  }
-
-  .genericCard2:hover > .cardContent2 {
-    display: none;
   }
 
   .genericCard2:hover {
@@ -960,10 +992,6 @@ body.modal-open {
     padding-bottom: 0;
     height: 100%;
     cursor: pointer;
-  }
-
-  .genericCard3:hover > .cardContent2 {
-    display: none;
   }
 
   .genericCard3:hover {
@@ -1001,10 +1029,6 @@ body.modal-open {
     width: 50%;
   }
 
-  .aboutText p {
-    padding: 2% 0;
-  }
-
   .resumeButton {
     width: 18%;
     padding: 2%;
@@ -1022,18 +1046,6 @@ body.modal-open {
     padding-top: 26%;
   }
 
-  .languagesList li {
-    width: 100%;
-  }
-
-  .frameworksList li {
-    width: 100%;
-  }
-
-  .skillsList li {
-    width: 100%;
-  }
-
   /* Contact Section */
 
   .contact-section {
@@ -1042,19 +1054,8 @@ body.modal-open {
     padding: 17% 6% 0%;
   }
 
-  .contact-section h2 {
-    width: 40%;
-    text-align: left;
-  }
-
   .contact-section form {
     width: 55%;
-  }
-
-  .contact-section li {
-    display: flex;
-    flex-direction: row;
-    align-self: left;
   }
 
   .contact-Button {
@@ -1097,7 +1098,7 @@ body.modal-open {
   .modal {
     padding: 8rem 3.9rem;
   }
-  
+
   .modal-content {
     padding: 0 1.5rem 1.8rem;
   }
@@ -1106,25 +1107,24 @@ body.modal-open {
     width: 32%;
     margin-top: 0;
   }
-  
-  .modal-content li{
+
+  .modal-content li {
     padding: 3%;
   }
-  
-  #contentModal img{
+
+  #contentModal img {
     width: 50%;
   }
-  
-  #descriptionModal{
+
+  #descriptionModal {
     margin-left: 2rem;
   }
 
   #descriptionModal .modalLinks {
     width: 90%;
   }
-  
-  
-  #descriptionModal .modalLinks li{
+
+  #descriptionModal .modalLinks li {
     margin-right: 1.5rem;
     font-weight: 400;
   }
