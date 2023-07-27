@@ -207,3 +207,11 @@ function validateInputs () {
     return true;
   }
 };
+
+form.addEventListener('submit', (elem) => {
+  elem.preventDefault();
+  const valid = validateInputs ();
+  if(valid === true) {
+  form.submit();
+  };
+});
