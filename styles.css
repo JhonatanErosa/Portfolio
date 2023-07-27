@@ -65,9 +65,16 @@ button {
 
 .mainCategories li {
   border: 1px solid #8993a4;
-  padding: 3.5%;
+  padding: 2.5%;
   cursor: pointer;
   position: relative;
+}
+
+.categories {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  width: 80%;
 }
 
 .categories li {
@@ -113,6 +120,30 @@ button {
   margin: 2%;
 }
 
+.modal-content li {
+  display: flex;
+  justify-content: space-between;
+  margin: 5.8% 0 3.5%;
+  padding: 3%;
+  color: #3c3a39;
+  border: 1px solid #8993a4;
+}
+
+.modalLinks {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.modalLinks li {
+  padding-left: 1%;
+  padding-right: 1%;
+  background: #ff6b00;
+  width: 45%;
+  border: none;
+  justify-content: space-evenly;
+}
+
 .navItems-menu li:nth-child(5) {
   border-bottom: none;
 }
@@ -130,12 +161,23 @@ button {
   width: 100%;
 }
 
+.modalLinks li a {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+}
+
 .navItems-menu li a:hover {
   filter: invert(45%) sepia(63%) saturate(1768%) hue-rotate(358deg) brightness(97%) contrast(111%);
 }
 
 .cardImage img {
   width: 100%;
+}
+
+.modalHeader img {
+  cursor: pointer;
 }
 
 .navItems-menu li a img {
@@ -261,6 +303,81 @@ button {
   margin-top: 16%;
 }
 
+/* Estilos para el modal */
+.modal {
+  display: flex;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(3px);
+  padding: 3.5rem 1.2rem;
+  width: 90%;
+  z-index: 9999;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  padding: 0 0.7rem 0.1rem;
+  background-color: #fff;
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modalHeader h3 {
+  font-size: 2rem;
+  color: #172b4d;
+  margin: 1rem 0;
+}
+
+.modal-content .categories {
+  margin: 3% 0;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: start;
+}
+
+.modal-content .categories li {
+  margin-right: 0.5rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.modalLinks li:hover {
+  background: linear-gradient(0deg, #fff5e1, #fff5e1), linear-gradient(0deg, #f55800, #f55800);
+  color: rgba(245, 88, 0, 1);
+  border: 1px solid rgba(245, 88, 0, 1);
+}
+
+.modalLinks li:active {
+  background: rgba(224, 83, 4, 1);
+  color: rgba(244, 241, 240, 1);
+}
+
+#contentModal img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.modalLinks li a:hover {
+  color: rgba(245, 88, 0, 1);
+}
+
+#contentModal .modalLinks li img {
+  width: auto;
+  height: 90%;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
 /* Cards Works Section */
 .grid {
   display: grid;
@@ -345,10 +462,17 @@ button {
 .genericCard1 {
   display: flex;
   flex-direction: column;
-  background-image: linear-gradient(rgba(38, 38, 38, 0), rgba(38, 38, 38, 0.9)), url(Sources/Snapshoot\ Portfolio.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.cardContent2 {
+  padding: 22% 4.5% 0;
+}
+
+#genericCard .cardContent2 {
+  background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%);
 }
 
 .genericCard2 {
@@ -369,10 +493,6 @@ button {
   background-position: center;
 }
 
-.cardContent2 {
-  padding: 22% 4.5% 0;
-}
-
 .cardContent2 h2 {
   color: #fff;
   font-size: 2em;
@@ -390,13 +510,6 @@ button {
   line-height: 1.5em;
 }
 
-.categories {
-  display: flex;
-  justify-content: space-between;
-  padding: 0;
-  width: 85%;
-}
-
 .projectsButton2 {
   background: #ff6b00;
   color: #fff;
@@ -405,17 +518,18 @@ button {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   line-height: 1.5em;
-  width: 90%;
+  width: 100%;
   display: flex;
   justify-content: center;
   cursor: pointer;
+  margin-left: -5%;
 }
 
 .projectsButton2:hover {
   background: linear-gradient(0deg, #fff5e1, #fff5e1), linear-gradient(0deg, #f55800, #f55800);
   color: rgba(245, 88, 0, 1);
   border: 1px solid rgba(245, 88, 0, 1);
-  width: 89.6%;
+  width: 99.5%;
 }
 
 .projectsButton2:active {
@@ -725,6 +839,97 @@ button {
     margin: auto;
   }
 
+  .modal {
+    padding: 8rem 2.2rem;
+  }
+
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 1rem 2rem;
+  }
+
+  #contentModal {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .categories {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    width: 85%;
+  }
+
+  .modal-content .categories {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .modal-content li {
+    margin: 0;
+    padding: 1%;
+  }
+
+  #contentModal img {
+    width: 60%;
+  }
+
+  #descriptionModal {
+    margin-left: 0.5rem;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .aboutText p {
+    padding: 2% 0;
+  }
+
+  .contact-section li {
+    display: flex;
+    flex-direction: row;
+    align-self: left;
+  }
+
+  .skillsList li {
+    width: 100%;
+  }
+
+  .frameworksList li {
+    width: 100%;
+  }
+
+  .languagesList li {
+    width: 100%;
+  }
+
+  .contact-section h2 {
+    width: 40%;
+    text-align: left;
+  }
+
+  .genericCard1:hover > .cardContent2 h2,
+  .genericCard1:hover > .cardContent2 p,
+  .genericCard1:hover > .cardContent2 li {
+    visibility: hidden;
+  }
+
+  #descriptionModal p {
+    margin-top: 0;
+  }
+
+  #descriptionModal .modalLinks {
+    margin: 0;
+    justify-content: left;
+  }
+
+  #descriptionModal .modalLinks li {
+    margin-right: 0.5rem;
+    padding: 0.3rem;
+  }
+
   .grid {
     display: grid;
     grid-template-columns: 33.333% 33.333% 33.333%;
@@ -740,7 +945,7 @@ button {
   }
 
   .projectsButton2 {
-    display: none;
+    visibility: hidden;
   }
 
   .genericCard1 {
@@ -752,19 +957,20 @@ button {
     cursor: pointer;
   }
 
-  .genericCard1:hover > .cardContent2 {
+  .genericCard3:hover > .cardContent2 {
     display: none;
   }
 
-  .genericCard1:hover {
-    background-image: url(Sources/Snapshoot\ Portfolio.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+  .genericCard2:hover > .cardContent2 {
+    display: none;
   }
 
-  .genericCard1:hover > .projectsButton2 {
-    display: flex;
+  #genericCard:hover > .cardContent2 {
+    background: none;
+  }
+
+  .genericCard1:hover > .cardContent2 a {
+    visibility: visible;
   }
 
   .genericCard2 {
@@ -774,10 +980,6 @@ button {
     padding-bottom: 0;
     height: 100%;
     cursor: pointer;
-  }
-
-  .genericCard2:hover > .cardContent2 {
-    display: none;
   }
 
   .genericCard2:hover {
@@ -798,10 +1000,6 @@ button {
     padding-bottom: 0;
     height: 100%;
     cursor: pointer;
-  }
-
-  .genericCard3:hover > .cardContent2 {
-    display: none;
   }
 
   .genericCard3:hover {
@@ -839,10 +1037,6 @@ button {
     width: 50%;
   }
 
-  .aboutText p {
-    padding: 2% 0;
-  }
-
   .resumeButton {
     width: 18%;
     padding: 2%;
@@ -860,18 +1054,6 @@ button {
     padding-top: 26%;
   }
 
-  .languagesList li {
-    width: 100%;
-  }
-
-  .frameworksList li {
-    width: 100%;
-  }
-
-  .skillsList li {
-    width: 100%;
-  }
-
   /* Contact Section */
 
   .contact-section {
@@ -880,19 +1062,8 @@ button {
     padding: 17% 6% 0%;
   }
 
-  .contact-section h2 {
-    width: 40%;
-    text-align: left;
-  }
-
   .contact-section form {
     width: 55%;
-  }
-
-  .contact-section li {
-    display: flex;
-    flex-direction: row;
-    align-self: left;
   }
 
   .contact-Button {
@@ -929,7 +1100,42 @@ button {
   }
 
   .topLine {
-    width: 60%;
+    width: 50%;
+  }
+
+  .modal {
+    padding: 8rem 3.9rem;
+  }
+
+  .modal-content {
+    padding: 0 1.5rem 1.8rem;
+  }
+
+  .modal-content .categories {
+    width: 40%;
+    margin-top: 0;
+  }
+
+  .modal-content li {
+    padding: 2%;
+  }
+
+  #contentModal img {
+    width: 50%;
+  }
+
+  #descriptionModal {
+    margin-left: 2rem;
+  }
+
+  #descriptionModal .modalLinks {
+    width: 90%;
+  }
+
+  #descriptionModal .modalLinks li {
+    margin-right: 1.5rem;
+    padding: 0.5rem;
+    font-weight: 400;
   }
 
   .grid {
@@ -950,7 +1156,7 @@ button {
   }
 
   .mainCategories {
-    width: 85%;
+    width: 87%;
     margin-bottom: 0;
   }
 
@@ -960,7 +1166,7 @@ button {
   }
 
   .resumeButton {
-    width: 15%;
+    width: 17%;
     text-align: center;
   }
 
@@ -973,9 +1179,9 @@ button {
   }
 
   .contact-section h2 {
-    width: 45%;
+    width: 50%;
     padding-top: 2%;
-    padding-right: 10%;
+    padding-right: 0;
     line-height: 52px;
   }
 
