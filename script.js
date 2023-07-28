@@ -214,3 +214,16 @@ form.addEventListener('submit', (elem) => {
     form.submit();
   }
 });
+
+//Local Storage
+const userName = document.querySelector('#user-name');
+const userEmail = document.querySelector('#email');
+const userMessage = document.querySelector('#msg');
+function saveUserData () {
+  const userData = {
+    name: userName.value,
+    email: userEmail.value,
+    message: userMessage.value
+  };
+  localStorage.setItem('userData', JSON.stringify(userData));
+}
