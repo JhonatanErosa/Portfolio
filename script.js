@@ -214,3 +214,40 @@ form.addEventListener('submit', (elem) => {
     form.submit();
   }
 });
+
+// Local Storage
+const userName = document.querySelector('#user-name');
+const userEmail = document.querySelector('#email');
+const userMessage = document.querySelector('#msg');
+
+function saveUserData() {
+  const userData = {
+    name: userName.value,
+    email: userEmail.value,
+    message: userMessage.value,
+  };
+  localStorage.setItem('userData', JSON.stringify(userData));
+}
+
+function getUSerData() {
+  if (localStorage.getItem('userData')) {
+    const userData = JSON.parse(localStorage.getItem('userData'));
+    userName.value = userData.name;
+    userEmail.value = userData.email;
+    userMessage.value = userData.message;
+  }
+}
+
+userName.addEventListener('change', () => {
+  saveUserData();
+});
+
+userEmail.addEventListener('change', () => {
+  saveUserData();
+});
+
+userMessage.addEventListener('change', () => {
+  saveUserData();
+});
+
+getUSerData();
