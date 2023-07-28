@@ -219,6 +219,7 @@ form.addEventListener('submit', (elem) => {
 const userName = document.querySelector('#user-name');
 const userEmail = document.querySelector('#email');
 const userMessage = document.querySelector('#msg');
+
 function saveUserData () {
   const userData = {
     name: userName.value,
@@ -227,3 +228,12 @@ function saveUserData () {
   };
   localStorage.setItem('userData', JSON.stringify(userData));
 }
+
+function getUSerData () {
+  if(localStorage.getItem('userData')) {
+    const userData = JSON.parse(localStorage.getItem('userData'));
+    userName.value = userData['name'];
+    userEmail.value = userData['email'];
+    userMessage.value = userData['message'];
+  };
+};
