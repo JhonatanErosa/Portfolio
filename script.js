@@ -227,7 +227,7 @@ function saveUserData () {
     message: userMessage.value
   };
   localStorage.setItem('userData', JSON.stringify(userData));
-}
+};
 
 function getUSerData () {
   if(localStorage.getItem('userData')) {
@@ -237,3 +237,17 @@ function getUSerData () {
     userMessage.value = userData['message'];
   };
 };
+
+userName.addEventListener('change', () => {
+  saveUserData();
+});
+
+userEmail.addEventListener('change', () => {
+  saveUserData();
+});
+
+userMessage.addEventListener('change', () => {
+  saveUserData();
+});
+
+getUSerData();
