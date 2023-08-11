@@ -20,12 +20,12 @@ for (let i = 0; i < linksPopUp.length; i += 1) {
 // PopUp Window
 const projects = [
   {
-    name: 'Multi-Post Stories',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industrys standard.',
-    featuredImage: 'Sources/MultiPostStories.svg',
-    technologies: ['CSS', 'HTML', 'Bootstrap', 'Ruby'],
-    liveDemo: 'https://jhonatanerosa.github.io/Portfolio/',
-    sourceURL: 'https://github.com/JhonatanErosa/Portfolio',
+    name: 'International Festival of Yucatecan Music',
+    description: 'An online platform that promotes and celebrates the musical heritage of the Yucatán Peninsula. It provides users with information about the festival, its lineup, schedules, and various events. The website aims to create an immersive experience for visitors interested in Yucatecan music and culture.',
+    featuredImage: 'Sources/InternationalFestival.svg',
+    technologies: ['CSS', 'HTML', 'JavaScript'],
+    liveDemo: 'https://jhonatanerosa.github.io/Capstone_International-Festival-of-Yucatecan-Music/',
+    sourceURL: 'https://github.com/JhonatanErosa/Capstone_International-Festival-of-Yucatecan-Music',
   },
   {
     name: 'Profesional Art Printing Data',
